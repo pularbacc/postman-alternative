@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>API Call</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="page">
+            <div class="header-page">
+                <div class="tab-container" id="tab-container">
+                    <!--div class="tab">
+                        <div class="tab-method">GET</div>
+                        <div class="tab-name">http://restapi.adequateshop.com/api/Tourist</div>
+                        <div class="tab-remove">x</div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-method">POST</div>
+                        <div class="tab-name">Tab 2</div>
+                        <div class="tab-remove">x</div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-method">PUT</div>
+                        <div class="tab-name">Tab 3</div>
+                        <div class="tab-remove">x</div>
+                    </div-->
+                    <button class="tab-add" id="tab-add">+</button>
+                </div>
+                <div class="tab-detail">
+
+                </div>
+            </div>
+            <div class="main-page">
+                <div class="input-page">
+                    <div class="input-header">
+                        <select class="input-method" id="inp-method">
+                            <option>GET</option>
+                            <option>POST</option>
+                            <option>PUT</option>
+                            <option>DELETE</option>
+                        </select>
+                        <input type="text" class="input-url" id="inp-url"/>
+                        <button class="btn-send" onclick="send()">Send</button>
+                    </div>
+                    <div class="input-body">
+                        <div class="label-body">Body 1</div>
+                        <textarea class="input-body-text" id="inp-body"></textarea>
+                    </div>
+                </div>
+                <div class="output-page">
+                    <div class="label-body">
+                        Output
+                        <span id="type-output"></span>
+                    </div>
+                    <textarea type="text" class="output-text" id="output"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
